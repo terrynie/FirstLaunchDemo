@@ -18,12 +18,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
+    UILabel *welcom = [[UILabel alloc] initWithFrame:CGRectMake((self.view.bounds.size.width-100)/2, (self.view.bounds.size.height-50)/2, 100, 50)];
+    [welcom setText:@"应用首界面"];
+    [self.view addSubview:welcom];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end
